@@ -1,73 +1,153 @@
 <!DOCTYPE html>
-<head><title>dog</title>
-</head>
-<style>
-
-*{
-    margin:0;
-    box-sizing: border-box; 
-}
-h1{ 
-    color: darkgoldenrod;
-    font-style: italic;
-    font-family: cursive;
-    font-size: 50px;
-}
-header{width: 100%;
-    background-color: darkmagenta;
-}
-nav{
-    width: 25%;
-    float: left;
-    padding: 10px;
-    background-color: grey;
-}
-
-section{background-color: darkgray;  
+<head>
+  <title>dog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <style>
+    *{
+        margin:0;
+        padding : 0;
+        box-sizing: border-box; 
+    }
+    body{
+      font-family: 'Poppins', sans-serif;
+    }
+    h1{ 
+        color: whitesmoke;
+        text-align : center;
+    }
+    header{
+        width: 100%;
+        background-color: rgb(32, 32, 32);
+        padding: 10px 0;
+    }
+    section{
+      background-color: darkgray;  
       display: table;
       content: none;
       width: 100%;
-} 
-article{
-    
-    width: 75%;
-    float:left;
-    height: 500px;
-}
-footer{
-  background-color: darkmagenta;
-  padding: 20px;
- }
-
-</style>
+    } 
+    nav{
+        width: 25%;
+        height: 100vh;
+        float: left;
+        padding: 10px;
+        background-color: grey;
+        text-align: center;
+    }
+    .article{    
+        width: 75%;
+        float:left;
+        height: 500px;
+        transform: translateY(-2%);
+    }
+    footer{
+      background-color: rgb(32, 32, 32);
+      padding: 15px;
+      text-align: center;
+      color : white;
+    }
+    img{
+      width: 100%;
+    }
+    .writeup{
+      margin : 25px;
+      padding: 15px;
+      border : 1px solid rgb(70, 70, 70);
+      border-radius: 10px;
+    }
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    li{
+      display: inline-block;
+      width: 40%;
+    }
+    .details{
+      position: relative;
+      margin-top: 15px;
+      padding-bottom: 10px;
+    }
+    button{
+      position: absolute;
+      top: 0;
+      right : 15px;
+      display: inline-block;
+      padding: 3px 10px;
+      margin-bottom: 0;
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 1.42857143;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      color: #fff;
+      background-color: #5cb85c;
+      border-color: #4cae4c;
+    }
+    h3{
+      display : inline-block;
+    }
+  </style>
+</head>
 <body>
-   <header><h1>Dogs</h1></header>
+   <header><h1>Dogs Available To Buy</h1></header>
 <section>
   <nav>
-  <div  class="breeds"> <h2>Breeds Available</h2><br>
-    <ul>
-       <li><img src="/pics/bulldog.png" alt="bulldog"><button>buy</button></li>
-       <li><img src="/pics/goldretrieve.png" alt="goldenretriever"><button>buy</button></li>
-       <li><img src="/pics/pug.png" alt="pug"><button>buy</button></li>
-       <li><img src="/pics/labretrieve.png" alt="labretriever"><button>buy</button></li>
-       <li><img src="/pics/germanshep.png" alt="germanshepherd"><button>buy</button></li>
-        <li><img src="/pics/pug2.png" alt="pug2"><button>buy</button></li>
-   </ul>
-  </div>
+    <div  class="breeds"> <h2>Breeds Available</h2><br>
+      <ul>
+        <li><img src="./pics/labretrieve.png" alt="labretriever"></li>
+        <li><img src="./pics/goldretrieve.png" alt="goldenretriever"></li>
+        <li><img src="./pics/bulldog.png" alt="bulldog"></li>
+        <li><img src="./pics/germanshep.png" alt="germanshepherd"></li>
+        <li><img src="./pics/pug.png" alt="pug2"></li>
+      </ul>
+    </div>
   </nav>
-  <article>
-  <div class="writeup">
-  <h3>Lab Retriever</h3><br>The Labrador Retriever, Labrador, or Lab is a medium-large breed of retriever-gun dog. The Labrador is the most popular breed of dog in many countries around the world.
-           <br><h3>Golden Retriever</h3><br>The Golden Retriever is a medium-large gun dog that was bred to retrieve shot waterfowl, such as ducks and upland game birds, during hunting and shooting parties. The name "retriever" refers to the breed's ability to retrieve shot game undamaged due to their soft mouth.
-           <br><h3>Bulldog</h3><br>The Bulldog, also known as the British Bulldog or English Bulldog, is a medium-sized dog breed. It is a muscular, hefty dog with a wrinkled face and a distinctive pushed-in nose. The Kennel Club, the American Kennel Club, and the United Kennel Club oversee breeding records.
-           <br><h3>GermanShepherd</h3><br>The German Shepherd is a breed of medium to large-sized working dog that originated in Germany. In the English language, the breed's officially recognized name is German Shepherd Dog.
-           <br><h3>Pug</h3><br>The pug is a breed of dog with physically distinctive features of a wrinkly, short-muzzled face, and curled tail. The breed has a fine, glossy coat that comes in a variety of colours, most often fawn or black, and a compact square body with well-developed muscles.
-           <br>
-   </div>
-   </article>        
+
+  <div class="article">
+    <div class="writeup">
+      <div class="details">
+        <h3>Lab Retriever</h3> <button>buy</button>
+        <p>The Labrador Retriever, Labrador, or Lab is a medium-large breed of retriever-gun dog. The Labrador is the most popular breed of dog in many countries around the world.</p>
+        
+      </div>
+      <hr>
+      <div class="details">
+        <h3>Golden Retriever</h3> <button>buy</button>
+        <p>The Golden Retriever is a medium-large gun dog that was bred to retrieve shot waterfowl, such as ducks and upland game birds, during hunting and shooting parties. The name "retriever" refers to the breed's ability to retrieve shot game undamaged due to their soft mouth.</p>
+        
+      </div>
+      <hr>
+      <div class="details">
+        <h3>Bulldog</h3> <button>buy</button>
+        <p>The Bulldog, also known as the British Bulldog or English Bulldog, is a medium-sized dog breed. It is a muscular, hefty dog with a wrinkled face and a distinctive pushed-in nose. The Kennel Club, the American Kennel Club, and the United Kennel Club oversee breeding records.</p>
+        
+      </div>
+      <hr>
+      <div class="details">
+        <h3>GermanShepherd</h3> <button>buy</button>
+        <p>The German Shepherd is a breed of medium to large-sized working dog that originated in Germany. In the English language, the breed's officially recognized name is German Shepherd Dog.</p>
+        
+      </div>
+      <hr>
+      <div class="details">
+        <h3>Pug</h3> <button>buy</button>
+        <p>The pug is a breed of dog with physically distinctive features of a wrinkly, short-muzzled face, and curled tail. The breed has a fine, glossy coat that comes in a variety of colours, most often fawn or black, and a compact square body with well-developed muscles.</p>
+        
+      </div>
+      <hr>
+    </div>
+  </div>        
 </section>
   <footer> 
-   <a href="index.html"><button>home</button></a>
+     All copy rights reserved, Made with Love by petshop
   </footer>    
 </body>
 
